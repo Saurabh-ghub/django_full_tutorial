@@ -6,3 +6,12 @@
 2.POST: If we want to submit data then we use POST method. It will not show the data we entered in form on url.
 3.UPDATE: If we want to update the data
 4.DELETE: to delete the data
+
+#MVT ==> Model View Template
+
+##Heirarachy
+ ### USER
+    ####DJANGO
+#####URL
+ #######VIEW
+#######MODEL  AND TEMPLATE
