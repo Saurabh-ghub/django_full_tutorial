@@ -11,7 +11,7 @@
 
 ## Heirarachy
  ### USER
-    #### DJANGO
-##### URL
- ####### VIEW
-####### MODEL  AND TEMPLATE
+    ### DJANGO
+### URL
+ ### VIEW
+### MODEL  AND TEMPLATE
