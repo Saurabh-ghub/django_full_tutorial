@@ -7,11 +7,11 @@
 3.UPDATE: If we want to update the data
 4.DELETE: to delete the data
 
-#MVT ==> Model View Template
+# MVT ==> Model View Template
 
-##Heirarachy
+## Heirarachy
  ### USER
-    ####DJANGO
-#####URL
- #######VIEW
-#######MODEL  AND TEMPLATE
+    #### DJANGO
+##### URL
+ ####### VIEW
+####### MODEL  AND TEMPLATE
