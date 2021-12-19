@@ -9,6 +9,7 @@ def index(request):
     dest1.price = 400
     dest1.img = 'destination_1.jpg'
     dest1.desc = "The city of dreams"
+    dest1.offer = True
 
     dest2 = Destination()
     dest2.name = "BANGALORE"
@@ -16,6 +17,7 @@ def index(request):
     dest2.price = 599
     dest2.img = 'destination_2.jpg'
     dest2.desc = "The city of IT hub"
+    dest2.offer = False
 
     dest3 = Destination()
     dest3.name = "KOLKATA"
@@ -23,6 +25,7 @@ def index(request):
     dest3.price = 388
     dest3.img = 'destination_3.jpg'
     dest3.desc = "The city of dreams"
+    dest3.offer = True
 
     dest4 = Destination()
     dest4.name = "NEW DELHI"
@@ -30,6 +33,7 @@ def index(request):
     dest4.price = 500
     dest4.img = 'destination_4.jpg'
     dest4.desc = "The city of dreams"
+    dest4.offer = True
     
     dests = [dest1,dest2,dest3,dest4]
     return render(request,"index.html", {'dests' : dests})
