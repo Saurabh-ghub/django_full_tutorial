@@ -18,3 +18,7 @@ Django's primary goal is to ease the creation of complex, database-driven websit
 ### URLs
  ### VIEW
 ### MODEL  AND TEMPLATE
+
+# ORM (Object Relation mapper)
+ The ORM’s main goal is to transmit data between a relational database and application model. The ORM automates this transmission, such that the developer need not write any SQL.
+ORM, as from the name, maps objects attributes to respective table fields. It can also retrieve data in that manner.
