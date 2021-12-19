@@ -54,7 +54,7 @@ ROOT_URLCONF = 'telusko.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'static')],
+        'DIRS': [os.path.join(BASE_DIR,'template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,3 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#adding static file direcxtory location path
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+#django will collect the satic file here
+STATIC_ROOT= os.path.join(BASE_DIR,'assets')
+ #we have run $ python manage.py collectstatic 
