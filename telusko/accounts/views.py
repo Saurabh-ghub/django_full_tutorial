@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User, auth
-
+from django.contrib.auth import logout, login
 # Create your views here.
 def register(request):
     if(request.method=="POST"):
@@ -38,6 +38,7 @@ def login(request):
         password=request.POST['password']
         user=authenticate(username=uname,password=password)
         if user is not None:
+            login(request,user)
             return redirect('/index')
         else:
             messages.info(request,'Invalid username password')
